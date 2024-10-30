@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListFul - Organiza tus Pendientes y Compromisos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.jfif" alt="Logo ListFul" class="logo">
+        <h1>ListFul</h1>
+        <p>Organiza tus Pendientes y Compromisos</p>
+    </header>
+
+    <nav>
+        <a href="#introduccion">Introducción</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#problemas">Problemas</a>
+        <a href="#tareas">Lista de Tareas</a>
+    </nav>
+
+    <div class="container">
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>Bienvenido a ListFul, tu asistente inteligente para gestionar pendientes y compromisos.</p>
+        </section>
+
+        <section id="tareas">
+            <h2>Lista de Tareas</h2>
+            <form id="taskForm">
+                <input type="text" id="taskName" placeholder="Nombre de la tarea" required>
+                <input type="datetime-local" id="taskDueDate" required>
+                <button type="submit">Agregar Tarea</button>
+            </form>
+            <ul id="taskList"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
